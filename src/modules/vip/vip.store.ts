@@ -1,4 +1,4 @@
-import { Store, State, Getter, Mutation, Action, Param } from '@/decorators/Store'
+import { Store, State, Getter, Mutation, Action } from '@/decorators/Store'
 
 @Store()
 export class VipStore {
@@ -7,17 +7,17 @@ export class VipStore {
   @State() count = 1
 
   @Getter()
-  total (@State('count') count) {
-    return count + 1
+  total (state) {
+    return state.count + 1
   }
 
   @Mutation()
-  addCount (@State('count') count, @Param() params) {
-    count += params.count
+  addCount (state, count) {
+    state.count += count
   }
 
   @Action()
-  findUser (@Mutation() mutations) {
-    this.mutations.addCount(1)
+  findUser ({ commit }, count) {
+    commit('addCount', count)
   }
 }

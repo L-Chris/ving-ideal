@@ -2,11 +2,8 @@ import { Router, Route, View } from '@/decorators/Router'
 
 @Router('vip')
 export class VipRouter {
-  private mode: string
+  mode: string = 'history'
 
-  constructor () {
-    this.mode = 'history'
-  }
   // routes
   @Route('home')
   @View('home')

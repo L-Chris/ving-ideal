@@ -1,1 +1,1 @@
-export const Module = (target, name, value) => {}
+export const Module = options => (target, name, descriptor) => descriptor

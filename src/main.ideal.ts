@@ -1,9 +1,8 @@
 import Ving, { App } from 'ving'
-import { VipRouter } from './modules/vip/vip.router'
+import { MallModule } from './modules/mall/mall.module'
+import { VipModule } from './modules/vip/vip.module'
 
 @App({
-  routers: [VipRouter],
-  stores: [],
-  plugins: []
+  modules: [MallModule, VipModule],
 })
 export class Ving {}

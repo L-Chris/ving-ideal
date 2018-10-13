@@ -4,9 +4,9 @@
 </template>
 
 <script>
-import { View, BaseView } from 'ving'
+import { View } from 'ving'
 @View()
-export default class VipIntroView extends BaseView {}
+export default class VipIntroView{}
 </script>
 
 <style lang="scss" scoped>
