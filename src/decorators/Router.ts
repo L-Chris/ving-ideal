@@ -1,0 +1,1 @@
+export const Router = (target, name, value) => {}

@@ -1,0 +1,1 @@
+export const Module = (target, name, value) => {}
