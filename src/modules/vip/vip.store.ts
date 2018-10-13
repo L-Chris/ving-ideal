@@ -1,9 +1,9 @@
 import { Store, State, Getter, Mutation, Action } from '@/decorators/Store'
 
-@Store()
+@Store({
+  modules: []
+})
 export class VipStore {
-  constructor () {}
-
   @State() count = 1
 
   @Getter()

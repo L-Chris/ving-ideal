@@ -1,4 +1,4 @@
-export const Store = () => (target, name, descriptor) => descriptor
+export const Store = (options?) => (target, name, descriptor) => descriptor
 export const State = () => (target, name, descriptor) => descriptor
 export const Getter = () => (target, name, descriptor) => descriptor
 export const Mutation = () => (target, name, descriptor) => descriptor

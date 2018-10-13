@@ -5,6 +5,7 @@
 
 <script>
 import { View } from 'ving'
+
 @View()
 export default class VipIntroView{}
 </script>

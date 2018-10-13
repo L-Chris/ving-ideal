@@ -4,7 +4,10 @@
 </template>
 
 <script>
-export default {
+import { View } from 'ving'
+
+@View()
+export default class VipHomeView {
 }
 </script>
 
